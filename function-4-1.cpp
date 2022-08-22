@@ -15,7 +15,6 @@ void printNumbers(int *numbers,int length)
 int secondSmallestSum(int *numbers,int length)
 {
     int result [10][10] ={0};
-    int return_arr[10] ={0};
     for (int i =0;i<length;i++)
     {
         for (int j =i;j<length;j++)

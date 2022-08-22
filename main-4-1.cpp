@@ -15,7 +15,6 @@ int main ()
     cout<<result<<endl;
     delete [] array;
     delete number;
-    delete [] result;
     return 0;
 
 }
