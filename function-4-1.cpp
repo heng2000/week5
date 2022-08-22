@@ -3,6 +3,7 @@ using namespace std;
 
 void printNumbers(int *numbers,int length) ;
 int secondSmallestSum(int *numbers,int length) ;
+int *readNumbers();
 
 void printNumbers(int *numbers,int length) 
 {
@@ -39,4 +40,11 @@ int secondSmallestSum(int *numbers,int length)
     return result[1][4];
 
     
+}
+int *readNumbers()
+{
+    int *number =new int ;
+    cout<<"enter a unmber: ";
+    cin>>*number;
+    return number;
 }

@@ -51,3 +51,11 @@ int *reverseArray(int *numbers1,int length)
     return reversed_arr;
 
 }
+
+int *readNumbers()
+{
+    int *number =new int ;
+    cout<<"enter a unmber: ";
+    cin>>*number;
+    return number;
+}

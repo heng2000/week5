@@ -36,6 +36,7 @@ void hexDigits(int *numbers,int length)
             }
         }
     }
+    cout<<endl;
 }
 
 int *readNumbers()

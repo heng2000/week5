@@ -33,3 +33,11 @@ bool equalsArray(int *numbers1,int *numbers2,int length)
     }
     return result;
 }
+
+int *readNumbers()
+{
+    int *number =new int ;
+    cout<<"enter a unmber: ";
+    cin>>*number;
+    return number;
+}

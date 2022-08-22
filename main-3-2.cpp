@@ -2,13 +2,8 @@
 using namespace std;
 extern int *reverseArray(int *numbers1,int length);
 extern void printNumbers(int *numbers,int length) ;
-int *readNumbers()
-{
-    int *number =new int ;
-    cout<<"enter a unmber: ";
-    cin>>*number;
-    return number;
-}
+extern int *readNumbers();
+
 
 
 int main ()
