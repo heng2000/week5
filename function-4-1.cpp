@@ -38,7 +38,6 @@ int secondSmallestSum(int *numbers,int length)
 int *readNumbers()
 {
     int *number =new int ;
-    cout<<"enter a unmber: ";
     cin>>*number;
     return number;
 }
