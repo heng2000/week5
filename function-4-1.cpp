@@ -32,14 +32,9 @@ int secondSmallestSum(int *numbers,int length)
         for(int w = q;w<length;w++)
         {
             result[q][w] =result[q][w-1]+numbers[w];
-            cout<<result[q][w];
         }
-        cout<<endl;
     }
-
     return result[1][4];
-
-    
 }
 int *readNumbers()
 {
