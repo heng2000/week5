@@ -11,11 +11,11 @@ int main ()
     int *number =new int ;
     for (int i =0;i<5;i++)
     {
-        number =readNumbers();
+        *number =*readNumbers();
         array[i] =*number;
     }
     printNumbers(array,5);
     delete [] array;
-    delete number;
+    delete[] number;
     return 0;
 }

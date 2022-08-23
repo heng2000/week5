@@ -12,7 +12,7 @@ void printNumbers(int *numbers,int length)
 }
 int *readNumbers()
 {
-    int *number =new int ;
+    int *number =new int[1] ;
     cin>>*number;
     return number;
 }
