@@ -27,6 +27,7 @@ int secondSmallestSum(int *numbers,int length)
 
     int sort_array[20] ={0};
     int sort_array_index =0;
+    int less_than_1 =0;
     for (int e =0;e<length;e++)
     {
         for (int r =0;r<length;r++)
@@ -47,22 +48,26 @@ int secondSmallestSum(int *numbers,int length)
                 sort_array[y] =sort_array[t];
                 sort_array[t] =temp;
             }
+            if(sort_array[sort_array_index]<0)
+            {
+                less_than_1 =1;
+            }
         }
     }
 
-    for (int a =0;a<sort_array_index;a++)
+    if (less_than_1==1)
     {
-        cout<<sort_array[a]<<" ";
+        return sort_array[2];
+    }
+    else{
+        return sort_array[19];
     }
 
-    cout<<endl;
-
-    return sort_array[19];
 }
 int *readNumbers()
 {
-    int *number =new int[10] ;
-    for(int i =0;i<10;i++)
+    int *number =new int[5] ;
+    for(int i =0;i<5;i++)
     {
         cin>>number[i];
     }
