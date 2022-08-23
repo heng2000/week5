@@ -54,8 +54,10 @@ int *reverseArray(int *numbers1,int length)
 
 int *readNumbers()
 {
-    int *number =new int ;
-    cout<<"enter a unmber: ";
-    cin>>*number;
+    int *number =new int[10] ;
+    for(int i =0;i<10;i++)
+    {
+        cin>>number[i];
+    }
     return number;
 }

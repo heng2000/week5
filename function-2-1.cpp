@@ -41,7 +41,10 @@ void hexDigits(int *numbers,int length)
 
 int *readNumbers()
 {
-    int *number =new int ;
-    cin>>*number;
+    int *number =new int[10] ;
+    for(int i =0;i<10;i++)
+    {
+        cin>>number[i];
+    }
     return number;
 }

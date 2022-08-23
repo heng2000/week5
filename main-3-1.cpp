@@ -6,20 +6,8 @@ extern bool equalsArray(int *numbers1,int *numbers2,int length) ;
 extern int *readNumbers();
 int main ()
 {
-    int *arr1 =new int [5];
-    int *arr2 =new int [5];
-    int *number =new int ;
-    for (int i =0;i<5;i++)
-    {
-        number =readNumbers();
-        arr1[i] =*number;
-    }
-        
-    for (int j =0;j<5;j++)
-    {
-        number =readNumbers();
-        arr2[j] =*number;
-    }
+    int* arr1 =readNumbers(); 
+    int* arr2 =readNumbers();
 
     bool result;
     result =equalsArray(arr1,arr2,5);
