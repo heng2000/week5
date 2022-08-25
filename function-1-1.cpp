@@ -18,4 +18,5 @@ void display_int_array(int *vals, int num_vals)
     {
         cout<<vals[i]<<" ";
     }
+    cout<<endl;
 }
