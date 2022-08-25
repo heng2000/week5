@@ -16,6 +16,6 @@ void display_int_array(int *vals, int num_vals)
 {
     for (int i =0;i<num_vals;i++)
     {
-        cout<<vals[i]<<endl;
+        cout<<vals[i]<<" ";
     }
 }

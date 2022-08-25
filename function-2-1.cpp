@@ -7,8 +7,7 @@ string weekday_lookup(int day)
     switch (day)
     {
     case 1:
-        return "monday";
-        break;
+        return "Monday";
     case 2:
         return "Tuesday";
     case 3:
