@@ -1,38 +1,19 @@
 #include<iostream>
 using namespace std;
-
-void printNumbers(int *numbers,int length) ;
-bool equalsArray(int *numbers1,int *numbers2,int length) ;
-
-
-bool equalsArray(int *numbers1,int *numbers2,int length)
+void dangerous_temps(double vals[],double threshold, int length);
+void dangerous_temps(double vals[],double threshold, int length)
 {
-    if (length<1)
-    {
-        return 0;
-    }
-    bool result  =1;
     for (int i =0;i<length;i++)
     {
-        if (result)
+        if (vals[i]>threshold)
         {
-            if (numbers1[i]==numbers2[i])
-            {
-                continue;
-            }else{
-                result =0;
-            }
+            cout<<i<<":"<<vals[i]<<" ";
         }
+        /*if (i!=length||i!=0)
+        {
+            cout<<" ";
+        }
+        */
     }
-    return result;
-}
-
-int *readNumbers()
-{
-    int *number =new int[10] ;
-    for(int i =0;i<10;i++)
-    {
-        cin>>number[i];
-    }
-    return number;
+    cout<<endl;
 }

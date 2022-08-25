@@ -1,12 +1,8 @@
 #include<iostream>
 using namespace std;
-extern void hexDigits(int *numbers,int length);
-extern int *readNumbers();
-
+extern string weekday_lookup(int day);
 int main ()
 {
-    int* array =readNumbers();
-    hexDigits(array,5);
-    delete [] array;
+    cout<<weekday_lookup(3)<<endl;
     return 0;
 }
